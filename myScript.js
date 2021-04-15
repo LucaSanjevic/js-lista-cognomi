@@ -10,13 +10,10 @@ var i = 0;
 while (i < elencoCognomi.length) {
 
     var elementoDaAnalizzare = elencoCognomi[i];
-
-    for (var j = 0; j < datiFiltrati.length; j++) {
-        var elementoGiaFiltrato = datiFiltrati[j];
+        var elementoGiaFiltrato = datiFiltrati[0];
         if (elementoDaAnalizzare === elementoGiaFiltrato) {
             console.log(cognomeUtente + ' è nella posizione ' + i);
         }
-    }
         i++
 
 }
