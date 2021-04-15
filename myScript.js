@@ -1,9 +1,9 @@
 var elencoCognomi = ['Bianchi','Neri','Rossi','Verdi','Gialli'];
-var cognomeUtente = prompt("Quale è il tuo cognome?");
+var _cognomeUtente = prompt("Quale è il tuo cognome?");
+var cognomeUtente = _cognomeUtente.charAt(0).toUpperCase(0) + _cognomeUtente.substring(1, _cognomeUtente.length)
 elencoCognomi.push(cognomeUtente);
 var datiFiltrati = []
 datiFiltrati.push(cognomeUtente);
-
 elencoCognomi.sort();
 var i = 0;
 
